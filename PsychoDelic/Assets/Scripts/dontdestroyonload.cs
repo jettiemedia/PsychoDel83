@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class dontdestroyonload : MonoBehaviour
 {
@@ -14,27 +13,6 @@ public class dontdestroyonload : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Create a temporary reference to the current scene.
-        Scene currentScene = SceneManager.GetActiveScene();
 
-        // Retrieve the name of this scene.
-        string sceneName = currentScene.name;
-
-        if (sceneName == "Level 2")
-            {
-            Destroy(gameObject);
-        }
-        else if (sceneName == "Victory")
-        {
-            Destroy(gameObject);
-        }
-        else if (sceneName == "Failure")
-        {
-            Destroy(gameObject);
-        }
-        else if (sceneName == "Menu")
-        {
-            Destroy(gameObject);
-        }
     }
 }

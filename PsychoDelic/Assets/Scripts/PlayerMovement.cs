@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Interactable focus;
-
     //character controller variables
     private CharacterController charController;
     public float speed;
@@ -17,8 +15,6 @@ public class PlayerMovement : MonoBehaviour
     //public Image black;
     public Animator anim;
 
-    Camera cam;
-
     private void Awake()
     {
         charController = GetComponent<CharacterController>();
@@ -26,8 +22,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cam = Camera.main;
-
+        
     }
 
     // Update is called once per frame
@@ -43,25 +38,6 @@ public class PlayerMovement : MonoBehaviour
         var movement = new Vector3(horizontal, 0, vertical);
 
         charController.SimpleMove(movement * Time.deltaTime * speed);
-
-        //temp pause
-        //removed
-
-        //interact with objects
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 100))
-            {
-                Interactable interactable = hit.collider.GetComponent<Interactable>();
-                if (interactable != null)
-                {
-                    SetFocus(interactable);
-                }
-            }
-        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -113,19 +89,8 @@ public class PlayerMovement : MonoBehaviour
             //SceneManager.LoadScene("Level 2");
             index = "Level 2";
             Fading(index);
-            Debug.Log("Level 2");
+            Debug.Log("Load level 2");
         }
-        /*else if (other.gameObjest.CompareTag("namethisandtagthedownstairsdoor") && winState = true){
-            index = "nameofwinscreen";
-            Fading(index);
-            Debug.Log("Win");
-        }
-        else if (other.gameObjest.CompareTag("namethisandtagthedownstairsdoor") && winState = false)
-        {
-            index = "nameofwinscreen";
-            Fading(index);
-            Debug.Log("Win");
-        }*/
         else
         {
             Debug.Log("This ain't it chief");
@@ -139,16 +104,6 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Load Scene");
         SceneManager.LoadScene(index);
 
-    }
-
-    void SetFocus (Interactable newFocus)
-    {
-        focus = newFocus;
-    }
-
-    void RemoveFocus()
-    {
-        focus = null;
     }
 
 }
