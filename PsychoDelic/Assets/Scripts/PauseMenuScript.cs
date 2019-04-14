@@ -31,6 +31,31 @@ public class PauseMenuScript : MonoBehaviour{
                 Pause();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.JoystickButton7))
+        {
+            if (GameisPaused)
+            {
+                Resume();
+            }
+
+            else
+            {
+                Pause();
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.JoystickButton1))
+        {
+            if (GameisPaused)
+            {
+                Resume();
+            }
+
+            else
+            {
+                Pause();
+            }
+        }
     }
 
     public void Resume()
