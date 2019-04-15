@@ -411,7 +411,6 @@ MonoBehaviour:
   LoadButton: {fileID: 0}
   exitGameButton: {fileID: 143799175}
   loadGameMenu: {fileID: 0}
-  howToPlayMenu: {fileID: 0}
   CrewMenu: {fileID: 0}
   newGameSceneName: 
   buttonFx: {fileID: 143799173}
@@ -935,7 +934,6 @@ MonoBehaviour:
   LoadButton: {fileID: 0}
   exitGameButton: {fileID: 0}
   loadGameMenu: {fileID: 0}
-  howToPlayMenu: {fileID: 0}
   CrewMenu: {fileID: 0}
   newGameSceneName: Room 1
   buttonFx: {fileID: 254665986}
@@ -3727,7 +3725,6 @@ MonoBehaviour:
   LoadButton: {fileID: 0}
   exitGameButton: {fileID: 0}
   loadGameMenu: {fileID: 0}
-  howToPlayMenu: {fileID: 0}
   CrewMenu: {fileID: 0}
   newGameSceneName: Main Menu
   buttonFx: {fileID: 1834030758}
@@ -4205,6 +4202,12 @@ MonoBehaviour:
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2108886662 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9048261053623456468, guid: 1282f4ae506157649a3614f313a05e7b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2108886660}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2123750238
 GameObject:
   m_ObjectHideFlags: 0
@@ -4270,7 +4273,7 @@ MonoBehaviour:
   focus: {fileID: 0}
   speed: 300
   index: 
-  anim: {fileID: 0}
+  anim: {fileID: 2108886662}
 --- !u!143 &2123750242
 CharacterController:
   m_ObjectHideFlags: 0

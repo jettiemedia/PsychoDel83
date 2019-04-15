@@ -73,12 +73,12 @@ public class PlayerMovement : MonoBehaviour
             Fading(index);
             Debug.Log("Main Hall");
         }
-        else if (other.gameObject.CompareTag("Room 1"))
+        else if (other.gameObject.CompareTag("Room 5"))
         {
-            //SceneManager.LoadScene("Room 1");
-            index = "Room 1";
+            //SceneManager.LoadScene("Room 1.1");
+            index = "Room 5";
             Fading(index);
-            Debug.Log("Room 1");
+            Debug.Log("Room 5");
         }
         else if (other.gameObject.CompareTag("Room 2"))
         {

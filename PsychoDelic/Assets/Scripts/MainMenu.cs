@@ -10,7 +10,6 @@ public class MainMenu : MonoBehaviour
     public Button LoadButton;
     public Button exitGameButton;
     public GameObject loadGameMenu;
-    public GameObject howToPlayMenu;
     public GameObject CrewMenu;
     public string newGameSceneName;
 
@@ -31,9 +30,9 @@ public class MainMenu : MonoBehaviour
         loadGameMenu.SetActive(true);
     }
 
-    public void OpenHowToPlayMenu()
+    public void tutorial()
     {
-        howToPlayMenu.SetActive(true);
+        SceneManager.LoadScene("Tutorial", LoadSceneMode.Single);
     }
 
     public void OpenCrewMenu()

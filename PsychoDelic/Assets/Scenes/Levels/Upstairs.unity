@@ -1713,7 +1713,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129005707}
-  m_LocalRotation: {x: -0.040301297, y: -0.0064791706, z: 0.00026132126, w: -0.99916655}
+  m_LocalRotation: {x: -0.0403013, y: -0.0064791744, z: 0.00026132143, w: -0.99916655}
   m_LocalPosition: {x: 0, y: 2, z: -35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2236,7 +2236,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296912608}
-  m_LocalRotation: {x: -0.040301297, y: -0.0064791706, z: 0.00026132126, w: -0.99916655}
+  m_LocalRotation: {x: -0.0403013, y: -0.0064791744, z: 0.00026132143, w: -0.99916655}
   m_LocalPosition: {x: 0, y: 2, z: -35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3225,7 +3225,6 @@ MonoBehaviour:
   LoadButton: {fileID: 0}
   exitGameButton: {fileID: 0}
   loadGameMenu: {fileID: 0}
-  howToPlayMenu: {fileID: 0}
   CrewMenu: {fileID: 0}
   newGameSceneName: Main Menu
   buttonFx: {fileID: 1625785251}
@@ -4077,7 +4076,7 @@ GameObject:
   - component: {fileID: 1752727699}
   m_Layer: 0
   m_Name: Door 1
-  m_TagString: Room 1
+  m_TagString: Room 1.1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4590,7 +4589,6 @@ MonoBehaviour:
   LoadButton: {fileID: 0}
   exitGameButton: {fileID: 1916951759}
   loadGameMenu: {fileID: 0}
-  howToPlayMenu: {fileID: 0}
   CrewMenu: {fileID: 0}
   newGameSceneName: 
   buttonFx: {fileID: 1916951757}
@@ -5072,7 +5070,6 @@ MonoBehaviour:
   LoadButton: {fileID: 0}
   exitGameButton: {fileID: 0}
   loadGameMenu: {fileID: 0}
-  howToPlayMenu: {fileID: 0}
   CrewMenu: {fileID: 0}
   newGameSceneName: Room 1
   buttonFx: {fileID: 2052061566}

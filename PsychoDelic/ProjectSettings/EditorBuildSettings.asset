@@ -39,7 +39,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Game State/Failure.unity
     guid: efdc8e010648dc245809679b874ad5dd
   - enabled: 1
-    path: Assets/Scenes/Game State/Victory.unity
+    path: Assets/Scenes/Game State/Ending.unity
     guid: 0adbaf474745c694fab6a886bb6f5564
   - enabled: 1
     path: Assets/Scenes/Levels/Level 2.unity

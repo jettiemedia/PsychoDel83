@@ -587,7 +587,6 @@ MonoBehaviour:
   LoadButton: {fileID: 0}
   exitGameButton: {fileID: 0}
   loadGameMenu: {fileID: 0}
-  howToPlayMenu: {fileID: 0}
   CrewMenu: {fileID: 0}
   newGameSceneName: Main Menu
   buttonFx: {fileID: 300632652}
@@ -4493,7 +4492,6 @@ MonoBehaviour:
   LoadButton: {fileID: 0}
   exitGameButton: {fileID: 0}
   loadGameMenu: {fileID: 0}
-  howToPlayMenu: {fileID: 0}
   CrewMenu: {fileID: 0}
   newGameSceneName: Room 1
   buttonFx: {fileID: 2024128976}
@@ -4805,7 +4803,6 @@ MonoBehaviour:
   LoadButton: {fileID: 0}
   exitGameButton: {fileID: 2031976092}
   loadGameMenu: {fileID: 0}
-  howToPlayMenu: {fileID: 0}
   CrewMenu: {fileID: 0}
   newGameSceneName: 
   buttonFx: {fileID: 2031976090}
@@ -5013,10 +5010,9 @@ GameObject:
   - component: {fileID: 2113055271}
   - component: {fileID: 2113055270}
   - component: {fileID: 2113055269}
-  - component: {fileID: 2113055273}
   m_Layer: 0
   m_Name: Level 2 Warp
-  m_TagString: Untagged
+  m_TagString: Level 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5093,15 +5089,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -40.370003, z: 0}
---- !u!114 &2113055273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113055268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5d427d128fa8034aa2d7938a08c3cc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
