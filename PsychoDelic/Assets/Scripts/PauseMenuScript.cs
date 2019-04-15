@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenuScript : MonoBehaviour{
+public class PauseMenuScript : MonoBehaviour
+{
 
-   public static bool GameisPaused = false;
+    public static bool GameisPaused = false;
 
-   public GameObject pauseMenuUI;
+    public GameObject pauseMenuUI;
 
     private void Start()
     {
@@ -20,6 +21,31 @@ public class PauseMenuScript : MonoBehaviour{
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (GameisPaused)
+            {
+                Resume();
+            }
+
+            else
+            {
+                Pause();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.JoystickButton7))
+        {
+            if (GameisPaused)
+            {
+                Resume();
+            }
+
+            else
+            {
+                Pause();
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.JoystickButton1))
         {
             if (GameisPaused)
             {

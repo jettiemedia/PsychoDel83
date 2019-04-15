@@ -2208,6 +2208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 752296714}
   - component: {fileID: 752296717}
+  - component: {fileID: 752296721}
   - component: {fileID: 752296716}
   - component: {fileID: 752296715}
   - component: {fileID: 752296720}
@@ -2496,6 +2497,20 @@ MonoBehaviour:
   buttonFx: {fileID: 752296719}
   hoverFx: {fileID: 8300000, guid: 312fd345875a1a346938deac5c13a8bc, type: 3}
   clickFx: {fileID: 8300000, guid: 6b495112809396b47b59b9ebf6ca35a5, type: 3}
+--- !u!114 &752296721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752296713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f965b53270b8be1478831cbc33e73852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventSystem: {fileID: 369417697}
+  selectedObject: {fileID: 752296713}
 --- !u!1 &795746792
 GameObject:
   m_ObjectHideFlags: 0
