@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class dontdestroyonload : MonoBehaviour
+public class dontdestroyonloadlevel2 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class dontdestroyonload : MonoBehaviour
         // Retrieve the name of this scene.
         string sceneName = currentScene.name;
 
-        if (sceneName == "Level 2")
+        if (sceneName == "Level 3")
         {
             Destroy(gameObject);
         }
@@ -38,4 +38,3 @@ public class dontdestroyonload : MonoBehaviour
         }
     }
 }
-
