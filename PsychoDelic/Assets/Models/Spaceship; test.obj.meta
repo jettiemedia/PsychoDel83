@@ -1,31 +1,17 @@
 fileFormatVersion: 2
-guid: e2b28e1f79c7945838f6ceb9eba5ce85
+guid: 945bc7643515b4f1681db774da25719f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Group_001
-    100002: Group_003
-    100004: Group_004
-    100006: //RootNode
-    400000: Group_001
-    400002: Group_003
-    400004: Group_004
-    400006: //RootNode
-    2100000: Group_001Mat
-    2100002: Group_003Mat
-    2100004: Group_004Mat
-    2300000: Group_001
-    2300002: Group_003
-    2300004: Group_004
-    3300000: Group_001
-    3300002: Group_003
-    3300004: Group_004
-    4300000: Group_001
-    4300002: Group_003
-    4300004: Group_004
-    6400000: Group_001
-    6400002: Group_003
-    6400004: Group_004
+    100000: pCube2
+    100002: //RootNode
+    400000: pCube2
+    400002: //RootNode
+    2100000: pCube2Mat
+    2300000: pCube2
+    3300000: pCube2
+    4300000: pCube2
+    6400000: pCube2
   externalObjects: {}
   materials:
     importMaterials: 1

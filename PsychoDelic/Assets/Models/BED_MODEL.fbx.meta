@@ -31,6 +31,7 @@ ModelImporter:
     2300000: pPlane3
     3300000: pPlane3
     4300000: pPlane3
+    6400000: pPlane3
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -64,7 +65,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
