@@ -29,6 +29,10 @@ ModelImporter:
     4300002: Object_color_0.640000-0.640000-0.640000.jpg
     4300004: Object_hazard-0.jpg
     4300006: Object_roadclosed-0.jpg
+    6400000: Object_color_0.512000-0.512000-0.512000.jpg
+    6400002: Object_color_0.640000-0.640000-0.640000.jpg
+    6400004: Object_hazard-0.jpg
+    6400006: Object_roadclosed-0.jpg
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -63,7 +67,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

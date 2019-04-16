@@ -36,6 +36,12 @@ ModelImporter:
     4300006: pCylinder1
     4300008: pCylinder2
     4300010: pCylinder3
+    6400000: pasted__pasted__pCylinder2_pasted__group_group1
+    6400002: pasted__pCylinder2_group
+    6400004: pasted__pCylinder3_group2
+    6400006: pCylinder1
+    6400008: pCylinder2
+    6400010: pCylinder3
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -69,7 +75,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
