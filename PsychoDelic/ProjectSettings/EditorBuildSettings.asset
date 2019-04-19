@@ -21,19 +21,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: 198a8b5b97705b24ca7b6884cdbf3d1e
   - enabled: 1
-    path: Assets/Scenes/Rooms/Room 1.unity
+    path: Assets/Scenes/Level 1 Rooms/Room 1.unity
     guid: 6136f83e8d883e24a84d35a26b2c75f3
   - enabled: 1
-    path: Assets/Scenes/Rooms/Room 5.unity
+    path: Assets/Scenes/Level 1 Rooms/Room 5.unity
     guid: c8186b3ff1b032244aac04a3a84fa739
   - enabled: 1
-    path: Assets/Scenes/Rooms/Room 2.unity
+    path: Assets/Scenes/Level 1 Rooms/Room 2.unity
     guid: f9ece4cce05d1774a9825501f4947de5
   - enabled: 1
-    path: Assets/Scenes/Rooms/Room 3.unity
+    path: Assets/Scenes/Level 1 Rooms/Room 3.unity
     guid: a438da2e0ba1daf40ac8de1c27392e61
   - enabled: 1
-    path: Assets/Scenes/Rooms/Room 4.unity
+    path: Assets/Scenes/Level 1 Rooms/Room 4.unity
     guid: 67d980a8598099548b472d493568438a
   - enabled: 1
     path: Assets/Scenes/Levels/Downstairs.unity
