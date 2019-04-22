@@ -115,6 +115,15 @@ public class PlayerMovement : MonoBehaviour
             Fading(index);
             Debug.Log("Level 2");
         }
+
+        else if (other.gameObject.CompareTag("Level 3"))
+        {
+            //SceneManager.LoadScene("Level 3");
+            index = "Level 3";
+            Fading(index);
+            Debug.Log("Level 3");
+        }
+
         /*else if (other.gameObjest.CompareTag("namethisandtagthedownstairsdoor") && winState = true){
             index = "nameofwinscreen";
             Fading(index);

@@ -14,6 +14,7 @@ TagManager:
   - Hallway
   - Gun
   - Room 5
+  - Level 3
   layers:
   - Default
   - TransparentFX
