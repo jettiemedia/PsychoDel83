@@ -8,6 +8,6 @@ public class triggerscene : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
-            SceneManager.LoadScene("Victory", LoadSceneMode.Single);
+            SceneManager.LoadScene("Ending", LoadSceneMode.Single);
     }
 }
