@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/Level 1 Rooms/Room 3.unity
+    guid: a438da2e0ba1daf40ac8de1c27392e61
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 5f9769e291cf8b342b2bc71e6d4ebfd5
@@ -29,9 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 1 Rooms/Room 2.unity
     guid: f9ece4cce05d1774a9825501f4947de5
-  - enabled: 1
-    path: Assets/Scenes/Level 1 Rooms/Room 3.unity
-    guid: a438da2e0ba1daf40ac8de1c27392e61
   - enabled: 1
     path: Assets/Scenes/Level 1 Rooms/Room 4.unity
     guid: 67d980a8598099548b472d493568438a
