@@ -10,7 +10,7 @@ public class PlayerMovementUpdated : MonoBehaviour
     public Interactable focus;
     private CharacterController charController;
     public string index;
-    float speed = 1;
+    float speed = 100;
     
     public Animator anim;
     int runStateHash = Animator.StringToHash("Base Layer.Run");
@@ -33,7 +33,7 @@ public class PlayerMovementUpdated : MonoBehaviour
     {
 
         float move = Input.GetAxis("Vertical");
-        anim.SetFloat("Speed", move);
+        anim.SetFloat("speed", move);
         
         //no pause/ending yet "esc" for force quit
         if (Input.GetKey("escape"))
@@ -41,6 +41,8 @@ public class PlayerMovementUpdated : MonoBehaviour
 
         var horizontal = Input.GetAxis("Horizontal");
         var vertical = Input.GetAxis("Vertical");
+
+        //Debug.Log("Hor: " + horizontal);
 
         var movement = new Vector3(horizontal, 0, vertical);
 
@@ -125,17 +127,17 @@ public class PlayerMovementUpdated : MonoBehaviour
             Debug.Log("Level 3");
         }
 
-        /*else if (other.gameObjest.CompareTag("namethisandtagthedownstairsdoor") && winState = true){
-            index = "nameofwinscreen";
-            Fading(index);
-            Debug.Log("Win");
-        }
-        else if (other.gameObjest.CompareTag("namethisandtagthedownstairsdoor") && winState = false)
-        {
-            index = "nameofwinscreen";
-            Fading(index);
-            Debug.Log("Win");
-        }*/
+        //else if (other.gameObjest.CompareTag("namethisandtagthedownstairsdoor") && winState = true){
+            //index = "nameofwinscreen";
+            //Fading(index);
+            //Debug.Log("Win");
+        //}
+        //else if (other.gameObjest.CompareTag("namethisandtagthedownstairsdoor") && winState = false)
+        //{
+            //index = "nameofwinscreen";
+            //Fading(index);
+            //Debug.Log("Win");
+        //}
         else
         {
             Debug.Log("This ain't it chief");
