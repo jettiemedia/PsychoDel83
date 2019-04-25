@@ -10,7 +10,7 @@ public class PlayerMovementUpdated : MonoBehaviour
     public Interactable focus;
     private CharacterController charController;
     public string index;
-    float speed = 1;
+    float speed = 300;
     
     public Animator anim;
     int runStateHash = Animator.StringToHash("Base Layer.Run");

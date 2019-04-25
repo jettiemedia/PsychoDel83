@@ -42,6 +42,8 @@ ModelImporter:
     3300000: pCylinder8
     4300000: pCylinder8
     6400000: pCylinder8
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -54,7 +56,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftLowerLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -62,7 +65,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -94,8 +97,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -108,8 +111,133 @@ ModelImporter:
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
-    human: []
-    skeleton: []
+    human:
+    - boneName: polySurface7
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: polySurface25
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: polySurface8
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: polySurface12
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: polySurface24 1
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: MAIN _CHAR(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface7
+      parentName: MAIN _CHAR(Clone)
+      position: {x: -0.003059582, y: 0.0015498066, z: -0.062665485}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface8
+      parentName: polySurface7
+      position: {x: 0.003059582, y: -0.0015498066, z: 0.02163216}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9797809, y: 0.9797809, z: 0.9797809}
+    - name: polySurface12
+      parentName: polySurface8
+      position: {x: -0, y: -0.0017746557, z: 0.0003513636}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0936279, y: 1.0936279, z: 1.0936279}
+    - name: polySurface24 1
+      parentName: polySurface12
+      position: {x: -0.10070518, y: -0.04932033, z: 0.036015116}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform31
+      parentName: polySurface24 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface26
+      parentName: polySurface8
+      position: {x: -0.11063479, y: -0.05408994, z: 0.039365105}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform28
+      parentName: polySurface26
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface25
+      parentName: polySurface7
+      position: {x: -0.10506315, y: -0.05556647, z: 0.07623821}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0905552, y: 1.0499015, z: 1.1628473}
+    - name: transform29
+      parentName: polySurface25
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube11
+      parentName: MAIN _CHAR(Clone)
+      position: {x: -0.11540305, y: -0.0006319158, z: -0.00015523075}
+      rotation: {x: 0.053512473, y: -0, z: -0, w: 0.9985672}
+      scale: {x: 1.065805, y: 1.065805, z: 1.065805}
+    - name: transform30
+      parentName: pCube11
+      position: {x: 0.003856343, y: -0.0011645477, z: -0.00034526942}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface24
+      parentName: MAIN _CHAR(Clone)
+      position: {x: -0.11140532, y: -0.046142314, z: -0.001760093}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform32
+      parentName: polySurface24
+      position: {x: 0.11140532, y: 0.046142314, z: 0.001760093}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder7
+      parentName: MAIN _CHAR(Clone)
+      position: {x: -0.12790951, y: -0.09395187, z: -0.0059963614}
+      rotation: {x: 0, y: -0, z: -0.11562438, w: 0.993293}
+      scale: {x: 0.540494, y: 0.73271495, z: 0.540494}
+    - name: transform33
+      parentName: pCylinder7
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCylinder8
+      parentName: MAIN _CHAR(Clone)
+      position: {x: -0.11140791, y: -0.042870026, z: -0.0024339627}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -119,10 +247,10 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
