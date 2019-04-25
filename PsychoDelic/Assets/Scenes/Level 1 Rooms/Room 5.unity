@@ -1068,8 +1068,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629788918}
   m_LocalRotation: {x: 0.015442359, y: -0.8876934, z: -0.015872488, w: 0.45990208}
-  m_LocalPosition: {x: 1.9121, y: 0.5412, z: -1.4943}
-  m_LocalScale: {x: 0.49318013, y: 0.7563767, z: 0.48299056}
+  m_LocalPosition: {x: 1.8945, y: 0.5398, z: -1.4672}
+  m_LocalScale: {x: 0.42857355, y: 0.7563767, z: 0.41655892}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 20
@@ -1205,6 +1205,97 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0c66c9107e3c59045a54aafd75cf50b5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ba34853a7357db428decaa81d184e1e, type: 3}
+--- !u!1 &685490828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 685490832}
+  - component: {fileID: 685490831}
+  - component: {fileID: 685490830}
+  - component: {fileID: 685490829}
+  m_Layer: 0
+  m_Name: Chair 2 Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &685490829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685490828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &685490830
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685490828}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &685490831
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685490828}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &685490832
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685490828}
+  m_LocalRotation: {x: 0.013208428, y: -0.94070226, z: -0.017774694, w: 0.33850977}
+  m_LocalPosition: {x: 1.903, y: 0.5243, z: -0.2046}
+  m_LocalScale: {x: 0.40405914, y: 0.8320144, z: 0.41655892}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: -1.404, y: -140.39201, z: -2.114}
 --- !u!1 &722328068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2658,7 +2749,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160661043}
   m_LocalRotation: {x: -0, y: 0.5241081, z: -0, w: 0.8516518}
-  m_LocalPosition: {x: -0.0484, y: 0.0017, z: 0.0192}
+  m_LocalPosition: {x: -0.0524, y: 0.0017, z: 0.0172}
   m_LocalScale: {x: 1.2237, y: 1.2237, z: 1.2237}
   m_Children: []
   m_Father: {fileID: 27955075}
@@ -4383,8 +4474,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060807664}
   m_LocalRotation: {x: -0, y: -0.71609694, z: -0, w: 0.6980009}
-  m_LocalPosition: {x: 2.539, y: 0.709, z: -0.749}
-  m_LocalScale: {x: 1.0967436, y: 0.23723112, z: 1.212316}
+  m_LocalPosition: {x: 2.5157, y: 0.709, z: -0.738}
+  m_LocalScale: {x: 0.8629656, y: 0.23723112, z: 0.754128}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
