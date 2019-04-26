@@ -24,7 +24,7 @@ public class dontdestroyonload : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        else if (sceneName == "Victory")
+        else if (sceneName == "Ending")
         {
             Destroy(gameObject);
         }
