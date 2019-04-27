@@ -36,10 +36,13 @@ public class CountDown : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-//Simple Coroutine
-IEnumerator LoseTime()
+        if (timeLeft <= 0)
+        {
+            SceneManager.LoadScene("Failure", LoadSceneMode.Single);
+        }
+     }
+    //Simple Coroutine
+    IEnumerator LoseTime()
     {
         while (true)
         {
