@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour
     public Button exitGameButton;
     public GameObject loadGameMenu;
     public GameObject CrewMenu;
+    public GameObject SpecialThanksMenu;
     public string newGameSceneName;
 
     //button audio variables
@@ -28,6 +29,11 @@ public class MainMenu : MonoBehaviour
     public void OpenLoadGameMenu()
     {
         loadGameMenu.SetActive(true);
+    }
+
+    public void OpenSpecialThanksMenu()
+    {
+        SpecialThanksMenu.SetActive(true);
     }
 
     public void tutorial()

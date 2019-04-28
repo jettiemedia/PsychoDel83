@@ -15,6 +15,7 @@ TagManager:
   - Gun
   - Room 5
   - Level 3
+  - object
   layers:
   - Default
   - TransparentFX
