@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class CountDown : MonoBehaviour
 {
-
+    private Rigidbody rb;
     public int timeLeft = 60; //Seconds Overall
     public Text countdown; //UI Text Object
 
@@ -16,6 +16,7 @@ public class CountDown : MonoBehaviour
         StartCoroutine("LoseTime");
         Time.timeScale = 1; //Just making sure that the timeScale is right
         DontDestroyOnLoad(gameObject);
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -40,15 +41,14 @@ public class CountDown : MonoBehaviour
         {
             SceneManager.LoadScene("Failure", LoadSceneMode.Single);
         }
-     }
-    //Simple Coroutine
-    IEnumerator LoseTime()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(1);
-            timeLeft--;
-        }
-
     }
-}
+        IEnumerator LoseTime()
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(1);
+                timeLeft--;
+            }
+
+        }
+    }

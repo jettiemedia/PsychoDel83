@@ -15,7 +15,7 @@ TagManager:
   - Gun
   - Room 5
   - Level 3
-  - Choc
+  - object
   layers:
   - Default
   - TransparentFX

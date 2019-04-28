@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public string index;
     //public Image black;
     public Animator anim;
+    private Rigidbody rb;
 
     Camera cam;
 
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
+        rb = GetComponent<Rigidbody>();
 
     }
 
@@ -124,20 +126,16 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Level 3");
         }
 
-        /*else if (other.gameObjest.CompareTag("namethisandtagthedownstairsdoor") && winState = true){
-            index = "nameofwinscreen";
-            Fading(index);
-            Debug.Log("Win");
+       if (other.tag == "Choc")
+       {
+            other.gameObject.SetActive(false);
+            Destroy(gameObject);
+            // timeLeft = timeLeft + 10;
         }
-        else if (other.gameObjest.CompareTag("namethisandtagthedownstairsdoor") && winState = false)
-        {
-            index = "nameofwinscreen";
-            Fading(index);
-            Debug.Log("Win");
-        }*/
+
         else
         {
-            Debug.Log("This ain't it chief");
+        Debug.Log("This ain't it chief");
         }
     }
 
