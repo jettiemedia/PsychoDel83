@@ -3672,7 +3672,7 @@ MonoBehaviour:
   jumpSpeed: 6
   gravity: 20
   rotateSpeed: 3
-  anim: {fileID: 0}
+  anim: {fileID: 1022356160}
 --- !u!1 &1434709737
 GameObject:
   m_ObjectHideFlags: 0
