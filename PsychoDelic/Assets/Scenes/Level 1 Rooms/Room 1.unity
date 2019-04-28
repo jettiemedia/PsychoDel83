@@ -2534,51 +2534,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 985241581}
-  - component: {fileID: 985241580}
   - component: {fileID: 985241582}
   - component: {fileID: 985241583}
-  - component: {fileID: 985241584}
-  - component: {fileID: 985241579}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &985241579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 985241578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 235b50af2512e1644a42a85148a83025, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  focus: {fileID: 0}
-  index: 
-  anim: {fileID: 1022356160}
---- !u!143 &985241580
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 985241578}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: -0.1, y: -5.37, z: 0.58}
+  m_IsActive: 1
 --- !u!4 &985241581
 Transform:
   m_ObjectHideFlags: 0
@@ -2624,25 +2588,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
---- !u!95 &985241584
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 985241578}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 801d9aa0a1dba8b4195dd1857a84b649, type: 3}
-  m_Controller: {fileID: 9100000, guid: 851782aa971a56e458b0d628f1af33ed, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &997593019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3043,6 +2988,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2e9a7774cd53a46afb9619ac85d9651b, type: 3}
       propertyPath: m_Name
       value: MAIN _CHAR_Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2e9a7774cd53a46afb9619ac85d9651b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2e9a7774cd53a46afb9619ac85d9651b, type: 3}
       propertyPath: m_LocalPosition.x
