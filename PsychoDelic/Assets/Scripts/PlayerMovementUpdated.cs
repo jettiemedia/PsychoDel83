@@ -7,13 +7,15 @@ using UnityEngine.UI;
 public class PlayerMovementUpdated : MonoBehaviour
 {
 
-    public Interactable focus;
+    private Interactable focus;
     private CharacterController charController;
     public string index;
-    float speed = 300;
-    
+    public float speed = 4.0F;
+    public float jumpSpeed = 6.0F;
+    public float gravity = 20.0F;
+    public float rotateSpeed = 3.0F;
+    private Vector3 moveDirection = Vector3.zero;
     public Animator anim;
-    int runStateHash = Animator.StringToHash("Base Layer.Run");
 
     Camera cam;
 
@@ -25,26 +27,32 @@ public class PlayerMovementUpdated : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
-        anim = GetComponent<Animator>();
     }
 
 
     void Update()
     {
 
-        float move = Input.GetAxis("Vertical");
-        anim.SetFloat("Speed", move);
         
         //no pause/ending yet "esc" for force quit
         if (Input.GetKey("escape"))
             Application.Quit();
 
-        var horizontal = Input.GetAxis("Horizontal");
-        var vertical = Input.GetAxis("Vertical");
+        CharacterController controller = GetComponent<CharacterController>();
+        if (controller.isGrounded)
+        {
+            moveDirection = new Vector3(0, 0, Input.GetAxis("Vertical"));
+            moveDirection = transform.TransformDirection(moveDirection);
+            moveDirection *= speed;
+            if (Input.GetButton("Jump"))
+                moveDirection.y = jumpSpeed;
 
-        var movement = new Vector3(horizontal, 0, vertical);
+        }
+        moveDirection.y -= gravity * Time.deltaTime;
+        controller.Move(moveDirection * Time.deltaTime);
 
-        charController.SimpleMove(movement * Time.deltaTime * speed);
+        //Rotate Player
+        transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
 
         //temp pause
         //removed
