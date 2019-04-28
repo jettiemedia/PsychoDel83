@@ -2630,8 +2630,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1169603501}
-  - component: {fileID: 1169603500}
-  - component: {fileID: 1169603499}
   - component: {fileID: 1169603498}
   - component: {fileID: 1169603497}
   m_Layer: 0
@@ -2671,40 +2669,6 @@ MonoBehaviour:
     baseValue: 1
   fireRate:
     baseValue: 1
---- !u!114 &1169603499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169603496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 891effb22742cee4090afd13a38894a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  focus: {fileID: 0}
-  speed: 300
-  index: 
-  anim: {fileID: 243610405}
---- !u!143 &1169603500
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169603496}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: -0.22, y: 2.01, z: 0.06}
 --- !u!4 &1169603501
 Transform:
   m_ObjectHideFlags: 0
@@ -4330,12 +4294,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1993077750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 891effb22742cee4090afd13a38894a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 235b50af2512e1644a42a85148a83025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  focus: {fileID: 0}
-  speed: 300
   index: 
+  speed: 4
+  jumpSpeed: 6
+  gravity: 20
+  rotateSpeed: 3
   anim: {fileID: 243610405}
 --- !u!136 &1993077753
 CapsuleCollider:
