@@ -3673,6 +3673,26 @@ MonoBehaviour:
   gravity: 20
   rotateSpeed: 3
   anim: {fileID: 1022356160}
+--- !u!95 &1430722125 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 6a6acde8aa9fa416f80f3b110eddd2f3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1571422246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1430722126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430722121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6db47c558daeea488d5e3d566504c0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1430722125}
+  MaxSpeed: 10
 --- !u!1 &1434709737
 GameObject:
   m_ObjectHideFlags: 0
