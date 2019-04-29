@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 131653813}
   - component: {fileID: 131653812}
   - component: {fileID: 131653811}
-  - component: {fileID: 131653810}
   - component: {fileID: 131653809}
   - component: {fileID: 131653808}
   m_Layer: 0
@@ -168,20 +167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Background: {fileID: 1129498838}
---- !u!114 &131653810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131653807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d29640262b1676342a8e4e5a24db98f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 2
-  item: {fileID: 11400000, guid: 674bf8204c0e81a45a687afff4a9b7c4, type: 2}
 --- !u!114 &131653811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1791,8 +1776,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -863, y: 488}
-  m_SizeDelta: {x: 162.4, y: 72.3}
+  m_AnchoredPosition: {x: -816.34, y: 488}
+  m_SizeDelta: {x: 255.71, y: 72.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1298475903
 GameObject:
@@ -2419,7 +2404,6 @@ GameObject:
   - component: {fileID: 1432262852}
   - component: {fileID: 1432262851}
   - component: {fileID: 1432262850}
-  - component: {fileID: 1432262849}
   m_Layer: 0
   m_Name: Player (1)
   m_TagString: Player
@@ -2427,19 +2411,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1432262849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1432262848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c23ea165be434a47a92d84c89538571, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items: []
 --- !u!114 &1432262850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2469,8 +2440,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 235b50af2512e1644a42a85148a83025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 60
-  countdown: {fileID: 0}
   index: 
   speed: 4
   jumpSpeed: 6
