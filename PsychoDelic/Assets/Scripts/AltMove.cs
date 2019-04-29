@@ -4,9 +4,7 @@ using System.Collections;
 public class AltMove : MonoBehaviour
 {
     public Animator anim;
-    int Speed = 300;
-    int jumpHash = Animator.StringToHash("Jump");
-    int runStateHash = Animator.StringToHash("Move Animator Controller");
+    public float MaxSpeed = 10;
 
 
     void Start()
@@ -17,13 +15,18 @@ public class AltMove : MonoBehaviour
 
     void Update()
     {
-        float move = Input.GetAxis("Vertical");
-        anim.SetFloat("Speed", move);
+        var x = Input.GetAxis("Horizontal");
+        var y = Input.GetAxis("Vertical");
 
-        AnimatorStateInfo stateInfo = anim.GetCurrentAnimatorStateInfo(0);
-        if (Input.GetKeyDown(KeyCode.Space) && stateInfo.nameHash == runStateHash)
-        {
-            anim.SetTrigger(jumpHash);
-        }
+        Move(x,y);
+
     }
+    private void Move(float x, float y)
+    {
+        anim.SetFloat("speed", y);
+        transform.position += (Vector3.forward * MaxSpeed) * y * Time.deltaTime;
+
+
+    }
+
 }
