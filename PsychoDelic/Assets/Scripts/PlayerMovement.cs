@@ -7,10 +7,13 @@ using UnityEngine.UI;
 public class PlayerMovement : MonoBehaviour
 {
     public Interactable focus;
-
     //character controller variables
+
     private CharacterController charController;
     public float speed;
+    public int timeLeft = 60; //Seconds Overall
+    public Text countdown; //UI Text Object
+
 
     //scene transtion variables
     public string index;
@@ -20,9 +23,10 @@ public class PlayerMovement : MonoBehaviour
 
     Camera cam;
 
-    private void Awake()
+    void Awake()
     {
         charController = GetComponent<CharacterController>();
+        //source = GetComponent<AudioSource>();
     }
     // Start is called before the first frame update
     void Start()
@@ -128,9 +132,8 @@ public class PlayerMovement : MonoBehaviour
 
        if (other.tag == "Choc")
        {
-            other.gameObject.SetActive(false);
-            Destroy(gameObject);
-            // timeLeft = timeLeft + 10;
+          other.gameObject.SetActive(false);
+          timeLeft = timeLeft = 10;
         }
 
         else

@@ -41,8 +41,13 @@ public class CountDown : MonoBehaviour
         {
             SceneManager.LoadScene("Failure", LoadSceneMode.Single);
         }
+        if (gameObject.tag == "Choc")
+        {
+            timeLeft = timeLeft += 10;
+        }
+
     }
-        IEnumerator LoseTime()
+    IEnumerator LoseTime()
         {
             while (true)
             {

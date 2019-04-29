@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class PlayerMovementUpdated : MonoBehaviour
 {
-
+    public int timeLeft = 60; //Seconds Overall
+    public Text countdown; //UI Text Object
     private Interactable focus;
     private CharacterController charController;
     public string index;
@@ -144,6 +145,13 @@ public class PlayerMovementUpdated : MonoBehaviour
             Fading(index);
             Debug.Log("Win");
         }*/
+
+        if (other.tag == "Choc")
+        {
+            other.gameObject.SetActive(false);
+            timeLeft = timeLeft = 10;
+        }
+
         else
         {
             Debug.Log("This ain't it chief");
